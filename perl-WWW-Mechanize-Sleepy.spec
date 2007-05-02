@@ -2,12 +2,12 @@
 
 Summary:	WWW::Mechanize::Sleepy - A Sleepy Mechanize Agent
 Name:		perl-%{real_name}
-Version:	0.5
-Release: %mkrel 2
+Version:	0.6
+Release: %mkrel 1
 License:	GPL or Artistic
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{real_name}
-Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/WWW/%{real_name}-%{version}.tar.bz2
+Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/WWW/%{real_name}-%{version}.tar.gz
 BuildRequires:	perl-devel
 BuildArch:	noarch
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
