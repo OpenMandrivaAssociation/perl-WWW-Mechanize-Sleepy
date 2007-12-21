@@ -10,6 +10,7 @@ URL:		http://search.cpan.org/dist/%{real_name}
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/WWW/%{real_name}-%{version}.tar.gz
 BuildRequires:	perl-devel
 BuildArch:	noarch
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 Sometimes when testing the behavior of a webserver it is important
