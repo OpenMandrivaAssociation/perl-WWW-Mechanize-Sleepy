@@ -1,16 +1,18 @@
-%define real_name WWW-Mechanize-Sleepy
+%define upstream_name    WWW-Mechanize-Sleepy
+%define upstream_version 0.6
+
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
 
 Summary:	WWW::Mechanize::Sleepy - A Sleepy Mechanize Agent
-Name:		perl-%{real_name}
-Version:	0.6
-Release: %mkrel 4
-License:	GPL or Artistic
+License:	GPL+ or Artistic
 Group:		Development/Perl
-URL:		http://search.cpan.org/dist/%{real_name}
-Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/WWW/%{real_name}-%{version}.tar.gz
-BuildRequires:	perl-devel
+Url:		http://search.cpan.org/dist/%{upstream_name}
+Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/WWW/%{upstream_name}-%{upstream_version}.tar.gz
+
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 Sometimes when testing the behavior of a webserver it is important
@@ -22,7 +24,7 @@ between your server requests. Use it just like you would use
 WWW::Mechanize.
 
 %prep
-%setup -q -n %{real_name}-%{version} 
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -43,4 +45,3 @@ rm -rf %{buildroot}
 %doc Changes README
 %{perl_vendorlib}/WWW/Mechanize/Sleepy.pm
 %{_mandir}/*/*
-
