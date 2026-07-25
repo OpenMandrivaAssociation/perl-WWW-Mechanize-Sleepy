@@ -2,14 +2,14 @@
 %define upstream_version 0.7
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	4
+Version:	%{upstream_version}
+Release:	5
 
 Summary:	WWW::Mechanize::Sleepy - A Sleepy Mechanize Agent
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/WWW/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://metacpan.org/dist/WWW-Mechanize-Sleepy
+Source0:	https://cpan.metacpan.org/authors/id/K/KN/KNTONAS/WWW-Mechanize-Sleepy-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
