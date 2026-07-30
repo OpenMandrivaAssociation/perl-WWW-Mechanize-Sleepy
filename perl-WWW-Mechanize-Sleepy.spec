@@ -2,7 +2,7 @@
 %define upstream_version 0.7
 Name:		perl-%{upstream_name}
 Version:	0.7
-Release:	2
+Release:	3
 
 Summary:	WWW::Mechanize::Sleepy - A Sleepy Mechanize Agent
 License:	GPL+ or Artistic
@@ -30,8 +30,8 @@ WWW::Mechanize.
 perl Makefile.PL INSTALLDIRS=vendor
 %make
 
-# make test don't work...
-#make test
+# make test || : don't work...
+#make test || :
 
 %install
 %makeinstall_std
