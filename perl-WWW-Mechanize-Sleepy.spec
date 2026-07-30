@@ -2,7 +2,7 @@
 %define upstream_version 0.7
 Name:		perl-%{upstream_name}
 Version:	0.7
-Release:	1
+Release:	2
 
 Summary:	WWW::Mechanize::Sleepy - A Sleepy Mechanize Agent
 License:	GPL+ or Artistic
@@ -24,7 +24,7 @@ between your server requests. Use it just like you would use
 WWW::Mechanize.
 
 %prep
-%setup -q -n %{upstream_name}-%{version}
+%setup -q -n WWW-Mechanize-Sleepy-0.7
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
